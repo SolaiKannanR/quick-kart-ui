@@ -39,7 +39,7 @@ export class HomePageService {
     var user:User
     user={emailID:userEmailID, password:userPassword,usertype:type};
     console.log(user)
-    let result=this.http.post<number>('https://quickcart-functionapp.azurewebsites.net/api/LoginFunction?code=kDxJUURhVektI3q0G7_k0zea7O9yKG0FG-VfWfLqbLzpAzFuZJP6ww==',user)
+    let result=this.http.post<number>('https://loginfn-team1-solaikannan.azurewebsites.net/api/LoginFunction?code=FHrz1vDlA8W5gmskuqnH6VTBAdXEr-2s9S9t28K3M_5MAzFu170abg==',user)
     return result
 
   }
